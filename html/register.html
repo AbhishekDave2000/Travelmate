@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/common-styles.css">
+        <link rel="stylesheet" href="../css/register.css">
+        <title>TravelMate - Register</title>
+
+        <!-- FavIcon link -->
+        <link rel="icon" type="image/x-icon" href="../img/Favicon1.png">
+        
+        <!-- Google font family link -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Header section start -->
+        <header>
+            <!-- Nav bar for the links to other pages and company logo -->
+            <nav id="navigation-bar">
+                <div class="company-logo-div">
+                    <img src="../img/Logo2.png" alt="Company Logo" id="site-logo">
+                </div>
+                <div class="navbar-main-div">
+                    <div id="menu" class="humberger-menu" onclick="toggleMenu()">
+                        <div id="humberger-first-div"></div>
+                        <div id="humberger-second-div"></div>
+                        <div id="humberger-third-div"></div>
+                    </div>
+                    <ul id="navbar-list">
+                        <li><a href="../index.html">Home</a></li>
+                        <li class="navbar-dropdown">
+                            <a href="" class="services-main-heading-link">Services</a>
+                            <div class="dropdown-content" id="dropdown-content-background">
+                                <a href="./services.html">Hotels Listing</a>
+                                <a href="./packages.html">Popular Packages</a>
+                                <!-- <a href="#">Link 3</a> -->
+                            </div>
+                        </li>
+                        <li class="show-in-mobile-nav-links"><a href="./services.html">Hotels Listing</a></li>
+                        <li class="show-in-mobile-nav-links"><a href="./packages.html">Popular Packages</a></li>
+                        <li><a href="./about_us.html">About</a></li>
+                        <li><a href="./contact_us.html">Contact</a></li>
+                        <li class="navbar-dropdown">
+                            <a href="">User</a>
+                            <div class="dropdown-content " id="auth-dropdown-content-background">
+                                <a href="./login.html">Login</a>
+                                <a href="./register.html">Register</a>
+                                <!-- <a href="#">Link 3</a> -->
+                            </div>
+                        </li>
+                        <li class="show-in-mobile-nav-links"><a href="./login.html">Login</a></li>
+                        <li class="show-in-mobile-nav-links"><a href="./register.html">Register</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- End of the navbar content -->
+        </header>
+        <!-- Header section end -->
+
+        <!-- Main: For main content of the webpage -->
+        <main>
+            <!-- Background div black screen start -->
+            <div class="background-dark"></div>
+            <!-- Background div black screen end -->
+            
+            <!-- Start of the contact form -->
+            <div class="form"> 
+                <h3>Registration</h3>
+                <form>
+                    <div class="info">
+                        <div class="box">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter Full Name" required>
+                        </div>
+                        <div class="box">
+                            <label>Username</label>
+                            <input type="text" placeholder="Enter UserName" required>
+                        </div>
+                        <div class="box">
+                            <label>Email Address</label>
+                            <input type="text" placeholder="Enter email address" required>
+                        </div>
+                        <div class="box">
+                            <label>Mobile Number</label>
+                            <input type="text" placeholder="Enter Mobile Number" required minlength="9" maxlength="10">
+                        </div>
+                        <div class="box">
+                            <label>Password</label>
+                            <input type="password" placeholder="Enter Password" required>
+                        </div>
+                        <div class="box">
+                            <label>Confirm Password</label>
+                            <input type="password" placeholder="Confirm Password" required><br>
+                        </div>
+                        <div class="button">
+                            <input type="submit" value="Register">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- End of the contact form -->
+
+            <!-- News Letter Section Start -->
+            <!-- <div class="news-letter-div">
+                <div class="cards-heading">
+                    <p>
+                        NewsLetter
+                    </p>
+                </div>
+                <div class="news-letter-body-div">
+                    <form action="#" method="">
+                        <input type="email" name="Email" id="news-letter-email-input" placeholder="Enter Your Email">
+                        <button id="news-letter-submit">Submit</button>
+                    </form>
+                </div>
+            </div> -->
+            <!-- News Letter Section End -->
+        </main>
+        <!-- End of the main content -->
+
+        <!-- Footer for copyrights and other contact information and social media handle links -->
+        <footer class="footer-main-div">
+            <div>
+                <ul class="footer-social-media-list">
+                    <li><a href="#"><i class="fab fa-instagram" style="color: white;"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook" style="color: white;"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube" style="color: white;"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter" style="color: white;"></i></a></li>
+                    <li><a href="#"><i class="fab fa-tiktok" style="color: white;"></i></a></li>
+                </ul>
+
+            </div>
+
+            <div class="copyright-div">
+                <span>All content &copy; TravelMate 2024. All rights reserved.</span>
+            </div>
+        </footer>
+        <!-- End of the footer content -->
+
+        <!-- Link to the custom.js for the Javascript operations -->
+        <script src="../js/custom.js"></script>
+        <script src="https://kit.fontawesome.com/c712c22f6b.js" crossorigin="anonymous"></script>
+    </body>
+</html>

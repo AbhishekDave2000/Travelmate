@@ -1,0 +1,136 @@
+
+#navigation-bar , .dropdown-content {
+	background-color: #0e3959;
+}
+#navigation-bar {
+    background: #0e3959 !important;
+}
+main {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    background: url(../img/back1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+}
+
+.background-dark{
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    min-width: 100%;
+    background-color: black;
+    background-size: cover;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+body
+{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    position: relative;
+    /* background: linear-gradient(90deg,#0e3959 0%,#0e3959 20%,#03a9f5 20%,#03a9f5 100%); */
+    background: url(../img/back1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form {
+    max-width: 650px;
+    background-color: #0e3959;
+    padding: 28px;
+    margin: 100px 28px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #0e3959;
+    z-index: 2;
+}
+
+.form >h3 {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: white;
+    border-bottom: solid 1px white;
+}
+.info 
+{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding-bottom: 15px;
+}
+.info .box label {
+    width: 95%;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;  
+}
+
+.box input {
+    display: flex;
+    height: 40px;
+    width: 95%;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+
+.box input:hover {
+    box-shadow:  0 0 8px #03a9f5;
+}
+
+.button input {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background: #03a9f5;
+}
+
+.button input:hover{
+    box-shadow: 0 0 10px #03a9f5;
+}
+
+/* .footer-main-div{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+} */
+
+@media (max-width: 500px) {
+    .form {
+        min-width: 150px;
+    } 
+    .box {
+        margin-bottom: 12px;
+        width: 100%;
+    }
+    .form >h3 {
+        font-size: 20px;
+    }
+}

@@ -1,8 +1,0 @@
------------------------------- 
-Name            -   Student Id 
------------------------------- 
-Aartiben Patel  -   101   
-Abhishek Dave   -   248   
-Dhara Joshi     -   728   
-Hetvi Dalal     -   498   
-------------------------------  

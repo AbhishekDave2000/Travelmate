@@ -1,0 +1,350 @@
+<!--
+    Student Id  |   Author Name
+    C0926248    |   Abhishek Dave
+    C0925101    |   Aarti patel
+    C0928728    |   Dhara Joshi 
+    C0924498    |   Hetvi Dalal
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Setting character set to "UTF-8" and view port to scale 1.0 -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Title of the Website -->
+        <title>TravelMate - Home</title>
+
+        <!-- FavIcon link -->
+        <link rel="icon" type="image/x-icon" href="./img/Favicon1.png" id="light-theme-favicon">
+
+        <!-- External Style Sheet Link -->
+        <link rel="stylesheet" href="./css/common-styles.css">
+        <link rel="stylesheet" href="./css/style.css">
+
+        <!-- Font Awesome Link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- Google font family link -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body onscroll="onScrollAnimations()">
+        <!-- Header for the background image, company logo and extra information -->
+        <header class="header">
+            <div class="background-header-section"></div>
+            <div class="header-quote">
+                <h1><i>Vacation calories don't count. Right?</i></h1>
+                <p>
+                    Once the Travel bug bites there is no known antidote, and I know that I shall be happily infected until the end of my life.
+                </p>
+                <input class="search-button" placeholder="Search for the Destinations to Travel.">
+                <span class="search-icon"><i class="fa-regular fa-magnifying-glass"></i></span>
+            </div>
+        </header>
+        <!-- End of the header content -->
+
+        <!-- Nav bar for the links to other pages and company logo -->
+        <nav id="navigation-bar">
+            <div class="company-logo-div">
+                <img src="./img/Logo2.png" alt="Company Logo" id="site-logo">
+            </div>
+            <div class="navbar-main-div">
+                <div id="menu" class="humberger-menu" onclick="toggleMenu()">
+                    <div id="humberger-first-div"></div>
+                    <div id="humberger-second-div"></div>
+                    <div id="humberger-third-div"></div>
+                </div>
+                <ul id="navbar-list">
+                    <li><a href="./index.html">Home</a></li>
+                    <li class="navbar-dropdown">
+                        <a href="" class="services-main-heading-link">Services</a>
+                        <div class="dropdown-content" id="dropdown-content-background">
+                            <a href="./html/services.html">Hotels Listing</a>
+                            <a href="./html/packages.html">Popular Packages</a>
+                            <!-- <a href="#">Link 3</a> -->
+                        </div>
+                    </li>
+                    <li class="show-in-mobile-nav-links"><a href="./html/services.html">Hotels Listing</a></li>
+                    <li class="show-in-mobile-nav-links"><a href="./html/packages.html">Popular Packages</a></li>
+                    <li><a href="./html/about_us.html">About</a></li>
+                    <li><a href="./html/contact_us.html">Contact</a></li>
+                    <li class="navbar-dropdown">
+                        <a href="">User</a>
+                        <div class="dropdown-content " id="auth-dropdown-content-background">
+                            <a href="./html/login.html">Login</a>
+                            <a href="./html/register.html">Register</a>
+                            <!-- <a href="#">Link 3</a> -->
+                        </div>
+                    </li>
+                    <li class="show-in-mobile-nav-links"><a href="./html/login.html">Login</a></li>
+                    <li class="show-in-mobile-nav-links"><a href="./html/register.html">Register</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- End of the navbar content -->
+
+        <!-- Main division for content for the website -->
+        <main>
+            <!-- Top scroll button div Start -->
+            <div class="top-scroll-button" id="top-scroll-button">
+                <a href="#">
+                    <img src="./img/index/UpArrow2.png" alt="Up Arrow">
+                </a>
+            </div>
+            <!-- Top scroll button div End -->
+
+            <!-- Popular location section -->
+            <section>
+                <!-- Popular Locations Section Start -->
+                <div class="cards-div popular-locations">
+                    <div class="cards-heading">
+                        <h2 class="cards-main-heading">
+                            Popular Locations
+                        </h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 popular-locations-cards">
+                            <a href="https://en.wikipedia.org/wiki/Taj_Mahal" target="_blank">
+                                <div class="cards-heading">
+                                    <h2>Taj Mahal, India</h2>
+                                </div>
+                                <div class="card-img">
+                                    <img src="./img/index/Taj.png" alt="">
+                                </div>
+                                <div class="card-content card-font">
+                                    Discover the romance and splendor of the Taj Mahal with our travel agency. Marvel at the timeless beauty of this UNESCO World Heritage Site, crafted by Emperor Shah Jahan's undying love. Let us curate your dream trip, where every moment at this architectural masterpiece becomes a cherished memory.
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-3 popular-locations-cards">
+                            <a href="https://en.wikipedia.org/wiki/Great_Wall_of_China" target="_blank">
+                                <div class="cards-heading">
+                                    <h2>Great Wall of China, China</h2>
+                                </div>
+                                <div class="card-img">
+                                    <img src="./img/index/ChinaWall.png" alt="">
+                                </div>
+                                <div class="card-content card-font">
+                                    Embark on an unforgettable journey with our travel agency and experience the wonder of the Great Wall of China. Stretching over 13,000 miles, this ancient marvel offers breathtaking views and thrilling adventures. Let us guide you along this iconic landmark, creating memories that will last a lifetime.
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-3 popular-locations-cards">
+                            <a href="https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza" target="_blank">
+                                <div class="cards-heading">
+                                    <h2>The Great Pyramid of Giza, Egypt</h2>
+                                </div>
+                                <div class="card-img">
+                                    <img src="./img/index/Pyramid.png" alt="">
+                                </div>
+                                <div class="card-content card-font">
+                                    Embark on a mesmerizing expedition to Egypt's Great Pyramid of Giza with our exclusive travel experiences. Dive into the mysteries of ancient civilization as you stand before this awe-inspiring wonder. Let the whispers of history guide you through its towering corridors and chambers, igniting your sense of wonder and fascination.
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-3 popular-locations-cards">
+                            <a href="https://en.wikipedia.org/wiki/Christ_the_Redeemer_(statue)" target="_blank">
+                                <div class="cards-heading">
+                                    <h2>Christ the Redeemer, Brazil</h2>
+                                </div>
+                                <div class="card-img">
+                                    <img src="./img/index/Christ.png" alt="">
+                                </div>
+                                <div class="card-content card-font">
+                                    Journey to Rio de Janeiro and behold the majestic Christ the Redeemer statue, an icon of divine serenity and breathtaking beauty. Ascend to the summit of Corcovado Mountain, where panoramic vistas await, and feel a sense of peace wash over you in the presence of this monumental symbol of faith and grace.
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-3 popular-locations-cards">
+                            <a href="https://en.wikipedia.org/wiki/Petra" target="_blank">
+                                <div class="cards-heading">
+                                    <h2>Petra, Jordan</h2>
+                                </div>
+                                <div class="card-img">
+                                    <img src="./img/index/Petra.png" alt="">
+                                </div>
+                                <div class="card-content card-font">
+                                    Embark on a voyage to Petra, the legendary "Rose City" of Jordan, and immerse yourself in its ancient wonders. Wander through the narrow Siq, marveling at the majestic Treasury carved into the rose-red cliffs. Let the whispers of history guide you as you explore this UNESCO World Heritage Site, where every corner reveals a story of ancient splendor and mystery.
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-3 popular-locations-cards">
+                            <a href="https://en.wikipedia.org/wiki/Colosseum" target="_blank">
+                                <div class="cards-heading">
+                                    <h2>The Colosseum, Italy</h2>
+                                </div>
+                                <div class="card-img">
+                                    <img src="./img/index/Italy.png" alt="">
+                                </div>
+                                <div class="card-content card-font">
+                                    Embark on an adventure to the heart of ancient Rome and behold the magnificent Colosseum, a testament to the grandeur of the Roman Empire. Stand in awe of its towering arches and storied history as you step back in time to witness gladiatorial contests and theatrical spectacles. Let the echoes of the past resonate as you explore this iconic symbol of resilience and architectural mastery.
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Popular Locations Section End -->
+            </section>
+
+            <!-- Services section -->
+            <section>
+                <!-- Services Section Start -->
+                <div class="cards-div services-main-div">
+                    <div class="cards-heading">
+                        <h2 class="cards-main-heading">
+                            Services
+                        </h2>
+                    </div>
+                    <div class="service-cards row">
+                        <div class="services-left-div">
+                            <div class="plane-path" style="z-index: -1;"></div>
+                            <img src="./img/index/Background2.png" alt="Background Image" style="z-index: 3;">
+                        </div>
+                        <div class="col-2 circle-div">
+                            <a href="">
+                                <img src="./img/index/TravellingLight.png" alt="Travelling Logo">
+                                <span class="service-name" onmouseover="showServiceName()">Packages</span>
+                            </a>
+                        </div>
+                        <div class="col-2 circle-div">
+                            <a href="">
+                                <img src="./img/index/HotelLight.png" alt="Hote Logo">
+                                <span class="service-name" onmouseover="showServiceName()">Hotels</span>
+                            </a>
+                        </div>
+                        <div class="col-2 circle-div">
+                            <a href="">
+                                <img src="./img/index/RestaurantsLight.png" alt="Restaurants Logo">
+                                <span class="service-name" onmouseover="showServiceName()">Restaurants</span>
+                            </a>
+                        </div>
+                        <div class="col-2 circle-div">
+                            <a href="">
+                                <img src="./img/index/ConsultancyLight.png" alt="Consultancy Logo">
+                                <span class="service-name" onmouseover="showServiceName()">Consultancy</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Services Section End -->
+            </section>
+
+            <!-- Extra information section -->
+            <div>
+                <!-- Other Information Section Start -->
+                <article class="extra-info-main-div">
+                    <div class="cards-heading">
+                        <h2 class="cards-main-heading">
+                            Explore The Unseen World
+                        </h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 youtube-video-side-content">
+                            <p>
+                                Embark on a journey that transcends borders and stretches the limits of your imagination. With every step, discover the world's kaleidoscope of cultures, landscapes, and experiences waiting to be explored. Let the whisper of distant lands and the allure of unknown horizons ignite your wanderlust.
+                            </p>
+                            <p>
+                                Travel is more than just a destination; it's a symphony of moments woven together by the threads of adventure. From the bustling streets of vibrant cities to the serene embrace of nature's untouched beauty, each encounter leaves an indelible mark on your soul.
+                            </p>
+                            <p>
+                                In the tapestry of travel, every corner holds a story, every encounter a lesson. Embrace the unknown, for it is in the unfamiliar that we find our truest selves. Let curiosity be your compass, guiding you to new heights and unveiling the extraordinary in the ordinary.
+                            </p>
+                            <p>
+                                So pack your dreams and wanderlust, and let the world be your muse. For in every journey lies the promise of discovery, and in every traveler beats the heart of an explorer. Dare to wander, for the world is vast, and adventure awaits at every turn.
+                            </p>
+                        </div>
+                        <aside class="col-6 youtube-video-div">
+                            <iframe src="https://www.youtube.com/embed/iUtnZpzkbG8?si=tgl1bolzFkT21b5h&loop=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </aside>
+                    </div>
+                </article>
+                <!-- Other Information Section End -->
+            </div>
+
+            <!-- testimonial section -->
+            <section>
+                <!-- Testimonials Section Start -->
+                <div class="testimonials-div">
+                    <div class="cards-heading">
+                        <h2 class="cards-main-heading">
+                            Testimonials
+                        </h2>
+                    </div>
+                    <div class="testimonials-cards-div row">
+                        <figure class="col-3">
+                            <div class="customer-profile-pic">
+                                <img src="./img/index/Customer4.png" alt="">
+                            </div>
+                            <figcaption class="customer-review card-font">
+                                TravelMate curated an unforgettable adventure for us! From start to finish, every detail was meticulously planned, ensuring a seamless and stress-free experience. Their passion for travel shines through their knowledgeable guides and personalized service. A journey with TravelMate is truly unparalleled!
+                            </figcaption>
+                        </figure>
+                        <figure class="col-3">
+                            <div class="customer-profile-pic">
+                                <img src="./img/index/Cuastomer2.png" alt="">
+                            </div>
+                            <figcaption class="customer-review card-font">
+                                Our experience with TravelMate exceeded all expectations! Their expert guides led us on a journey of discovery, immersing us in the culture and beauty of each destination. With flawless organization and attention to detail, they turned our vacation dreams into reality. Thank you, TravelMate!
+                            </figcaption>
+                        </figure>
+                        <figure class="col-3">
+                            <div class="customer-profile-pic">
+                                <img src="./img/index/Cuastomer3.png" alt="">
+                            </div>
+                            <figcaption class="customer-review card-font">
+                                Choosing TravelMate was the best decision we made for our travels! Their commitment to excellence was evident in every aspect of our trip, from the breathtaking sights to the impeccable service. With TravelMate, you're not just a traveler, you're part of an unforgettable adventure!
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <!-- Testimonials Section End -->
+            </section>
+
+            <!-- NewsLetter Section -->
+            <section>
+                <!-- News Letter Section Start -->
+                <div class="news-letter-div">
+                    <div class="cards-heading">
+                        <h2 class="cards-main-heading">
+                            NewsLetter
+                        </h2>
+                    </div>
+                    <div class="news-letter-body-div">
+                        <form action="https://www.google.com/" method="post">
+                            <input type="email" name="Email" id="news-letter-email-input" placeholder="Enter Your Email" required>
+                            <button id="news-letter-submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- News Letter Section End -->
+            </section>
+        </main>
+        <!-- End of the main content -->
+
+        <!-- Footer for copyrights and other contact information and social media handle links -->
+        <footer class="footer-main-div">
+            <div>
+                <ul class="footer-social-media-list">
+                    <li><a href="#"><i class="fab fa-instagram" style="color: white;"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook" style="color: white;"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube" style="color: white;"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter" style="color: white;"></i></a></li>
+                    <li><a href="#"><i class="fab fa-tiktok" style="color: white;"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="copyright-div">
+                <span>All content &copy; TravelMate 2024. All rights reserved.</span>
+            </div>
+        </footer>
+        <!-- End of the footer content -->
+
+        <!-- Link to the custom.js for the Javascript operations -->
+        <script src="./js/custom.js"></script>
+        <script src="https://kit.fontawesome.com/c712c22f6b.js" crossorigin="anonymous"></script>
+    </body>
+</html>

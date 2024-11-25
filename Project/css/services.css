@@ -1,0 +1,445 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+main{
+	color: #0e3959 !important;
+}
+
+#navigation-bar , .dropdown-content{
+	background-color: #0e3959;
+}
+
+.services-main{
+	padding-top: 60px;
+	position: relative;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	justify-content: center;
+	width: 90%;
+}
+
+.hotels-listing-heading{
+	padding-top: 30px;
+}
+
+.top-scroll-button{
+    position: fixed;
+    bottom: 30px;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #03a9f5;
+    display: none;
+    z-index: 8;
+}
+
+.top-scroll-button a{
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease-in;
+}
+
+.top-scroll-button a img{
+    max-width: 60%;
+}
+
+.list-container{
+	margin-top: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.house-check-option{
+	align-self: baseline;
+	border-radius: 20px;
+	background-color: #0e3959;
+	color: white;
+	padding: 10px;
+	margin-top: 1%;
+}
+
+.house-check-option a{
+	text-decoration: none;
+	color: white;
+	margin: 5px;
+}
+
+.hotels-container{
+	width: 80%;
+}
+
+.left-col{
+	flex-basis: 70%;
+}
+
+.right-col{
+	flex-basis: 25%;
+}
+
+.left-col h1{
+	color: #333;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+
+.home{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 30px 0;
+	border-top: 1px solid #0e3959;
+}
+
+.home-img{
+	flex-basis: 45%;
+	margin-right: 25px;
+}
+
+.home-info{
+	flex-basis: 40%;
+	color: #555;
+}
+
+.home-img img{
+    width: 100%;
+	border-radius: 12px;
+}
+
+.home-info h3{
+	font-weight: 600;
+	color: #333;
+	font-size: 22px;
+	margin: 4px 0;
+}
+
+.home-info i{
+	color: #ff5361;
+	font-size: 18px;
+	margin: 10px 1px;
+}
+
+.home-price{
+	text-align: right;
+}
+
+.home-price h4{
+	font-size: 20px;
+}
+
+.home-price h4 span{
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.sidebar{
+	border: 1px solid #999;
+	border-radius: 12px;
+	padding: 20px 30px;
+	margin-top: 30px;
+	box-shadow: 0 0 30px #03a9f5;
+}
+
+.sidebar h2{
+	font-weight: 600;
+}
+
+.sidebar h3{
+	font-weight: 600;
+	margin: 20px 0 10px;
+}
+
+.filter{
+	display: flex;
+	align-items: center;
+	color: #555;
+	margin-bottom: 10PX;
+}
+
+.filter p{
+	flex: 1;
+}
+
+.filter input{
+	margin-right: 15px;
+	cursor: pointer;
+}
+
+.sidebar-link{
+	text-align: right;
+	margin: 20px 0;
+}
+
+.sidebar-link a{
+	text-decoration: none;
+}
+
+.pagination{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 40px 0;
+}
+
+.pagination span{
+	margin: 0px 5px;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	border-radius: 50%;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.pagination .current{
+    background: #03a9f5;
+    color: white;
+}
+
+
+/* --------House-Detail Page---------*/
+.house-detail-main{
+	padding-top: 80px;
+}
+
+.house-title{
+	margin-top: 0;
+	position: relative;
+	max-height: fit-content;
+}
+
+.house-title h1{
+	font-weight: 600;
+	display: inline-flex;
+	align-items: end;
+}
+
+.house-title h1 span{
+	margin-bottom: 8px;
+}
+
+.back-page-button{
+	/* margin-top: 50px; */
+	border-radius: 50%;
+	background-color: #0e3959;
+	width: 50px;
+	height: 50px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.back-page-button a{
+	height: 100%;
+	width: 100%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.back-page-button a i {
+	color: white;
+}
+
+.house-title .row{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 0;
+}
+
+.house-title span{
+	margin: 0 20px;
+} 
+
+.house-title i{
+	color: #ff5361;
+	font-size: 14px; 
+}
+
+.gallery{
+	display: grid;
+	grid-gap: 10px;
+	grid-template-areas: 'first first . .' 'first first . .';
+	margin: 20px 0;
+}
+
+.gallery div img{
+	width: 100%;
+	display: block;
+	border-radius: 10px;
+}
+
+.gallery-img-1{
+	grid-area: first;
+}
+
+.small-details h2{
+	font-weight: 500;
+}
+
+.small-details h4{
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.line{
+	border: 0;
+	height: 1px;
+	background: #ccc;
+	width: 100%;
+	max-width: 100%;
+	margin: 20px 0 50px;
+}
+
+.check-form{
+	margin:30px 0;
+	background: #fff;
+	box-shadow: 0 0 30px #0e3959;
+	border-radius: 8px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 10px 50px;
+}
+
+.check-form label{
+	display: block;
+}
+
+.check-form div{
+	padding: 20px;
+}
+
+.check-form input{
+	background: transparent;
+	border: 0;
+	outline: none;
+}
+
+.check-form button{
+	background: #0e3959;
+	border: 0;
+	outline: none;
+	color: #fff;
+	padding: 18px;
+	width: 350px;
+	border-radius: 8px;
+	font-size: 16px;
+}
+
+.guest-field{
+	flex: 1;
+}
+
+.details-list{
+	list-style: none;
+	margin-top: 50px;
+	padding-left: 0px !important;
+}
+
+.details-list li{
+	margin-left: 50px;
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 20px;
+	color: #555;
+	position: relative;
+}
+
+.details-list li span{
+	display: block;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.details-list li i{
+	position: absolute;
+	top: 5px;
+	left: -40px;
+}
+
+/* -----------------> Media Queries Start */
+
+/* For Mobile devices */
+@media screen and (min-width: 500px) {
+    .top-scroll-button{
+        bottom: 25px;
+        left: 10px;
+        width: 40px;
+        height: 40px;
+    }
+	.details-list{
+		padding-left: 40px !important;
+	}
+}
+
+/*------media query for house detail page small screen-----*/
+@media only screen and (max-width: 700px){
+	.row p{
+		margin-top: 10px;
+	}
+	.gallery{
+		grid-template-areas: 'first first' '. .' '. .';
+	}
+	.small-details h2{
+		font-size: 20px;
+		margin-top: 24px;
+	}
+	.small-detail h4{
+		text-align: right;
+		margin:10px 0;
+		font-size: 18px;
+	}
+	.check-form{
+		padding: 10px 30px;
+	}
+	.check-form div{
+		padding: 20px 0;
+		width: 100%;
+	}
+	.check-form input{
+		border-bottom: 1px solid #ccc;
+		width: 100%;
+		padding-bottom: 5px;
+	}
+	.check-form button{
+		font-size: 14px;
+		margin-top: 10px;
+		margin-bottom: 15px;
+		border-radius: 4px;
+	}
+}
+
+@media only screen and (max-width: 769px){
+	.list-container{
+		margin-top: 150px;
+	}
+	.left-col, .right-col, .home-img, .home-info{
+		flex-basis: 100%;
+	}
+	.left-col h1{
+		font-size: 22px;
+	}
+	.home-info h3{
+		font-size: 18px;
+    }
+    .home-info i{
+		font-size: 16px;
+    }
+    .pagination span{
+		margin: 10px 2px;
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		font-size: 12px;
+    }
+}

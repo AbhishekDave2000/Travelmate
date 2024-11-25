@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.background-about-us-div{
+    min-height: 80vh;
+    min-width: 100%;
+    background-image: url(../img/about_us/travel-1749508_1280.jpg);
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: -1;
+}
+
+.background-about-us-pic{
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    min-height: 100% !important;
+    min-width: 100% !important;
+    opacity: 0.5;
+    margin: 0;
+    padding: 0;
+}
+
+.header-text-about-us{
+    color: white;
+    margin-top: 200px;
+    z-index: 1;
+    text-align: center;
+}
+
+.header-text-about-us h1 {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.header-text-about-us p {
+    font-size: 1.3em;
+}
+
+.container {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.div-content-text {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.achievement-detail-conatainer {
+    border-radius: 50%;
+    min-width: 210px;
+    min-height: 210px;
+    background-color: #0e3959;
+    box-shadow: 0 0 20px #0e3959;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+}
+
+.achievement-detail-conatainer:hover {
+    box-shadow: 0 0 30px #0e3959;
+}
+
+.achievements-content table {
+    width: 100%;
+}
+
+.achievements-content table tr , .perks-content-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.achievements-content table tr td {
+    margin: 10px 10px;
+}
+
+.achievement-detail-conatainer:hover span {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.achievement-detail-conatainer span {
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.perks-detail-div, .perks-image-div, .perks-text-div {
+    padding: 10px;
+    text-align: center;
+}
+
+.perks-detail-div {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px #0e3959;
+    border-radius: 20px;
+    min-width: 250px;
+    max-width: 280px;
+    margin: 10px 0px;
+}
+
+.image-gallery-content-main-div {
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-div {
+    max-width: 300px;
+    min-width: 200px;
+    max-height: 300px;
+    min-height: 180px;
+    margin: 5px;
+}
+
+.travelling-pic {
+    border-radius: 5px;
+    box-shadow: 0 0 10px #0e3959;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+    .header-text-about-us p {
+        font-size: 1.6em;
+    }
+    /* .div-content-text {
+        font-size: 1.2em;
+    }
+    .achievement-detail-conatainer:hover span {
+        font-size: 1.2em;
+    } */
+    .container {
+        width: 90%;
+    }
+}
+
+
+@media screen and (min-width: 769px) {
+    .header-text-about-us h1 {
+        font-size: 2.2em;
+    }
+    .header-text-about-us p {
+        font-size: 1.8em;
+    }
+    .div-content-text {
+        font-size: 1.3em;
+    }
+    .achievement-detail-conatainer:hover span {
+        font-size: 1.3em;
+    }
+    .container {
+        width: 85%;
+    }
+}
